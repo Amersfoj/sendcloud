@@ -1,5 +1,5 @@
 {
-  "name": "sendcloud/sendcloud",
+  "name": "amersfoj/sendcloud",
   "description": "A Magento 2 module that connects the Magento environment to the SendCloud environment",
   "type": "magento2-module",
   "homepage": "https://www.sendcloud.com/",
