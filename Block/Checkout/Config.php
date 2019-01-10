@@ -14,12 +14,9 @@ use Magento\Store\Model\ScopeInterface;
 
 class Config extends Template
 {
-    /** @var ScopeConfigInterface  */
-    private $scopeConfig;
 
-    public function __construct( Template\Context $context, ScopeConfigInterface $scopeConfig, array $data = [] )
+    public function __construct( Template\Context $context, array $data = [] )
     {
-        $this->scopeConfig = $scopeConfig;
 
         parent::__construct($context, $data);
     }
@@ -29,6 +26,6 @@ class Config extends Template
      */
     public function getScriptUrl()
     {
-        return $this->scopeConfig->getValue('sendcloud/sendcloud/script_url', ScopeInterface::SCOPE_STORE);
+        return $this->_scopeConfig->getValue('sendcloud/sendcloud/script_url', ScopeInterface::SCOPE_STORE);
     }
 }
