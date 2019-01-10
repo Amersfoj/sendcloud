@@ -32,7 +32,9 @@ class Checkout extends AbstractHelper
     public function checkForScriptUrl()
     {
         $isScriptUrlDefined = true;
-        $scriptUrl = $this->scopeConfig->getValue('sendcloud/sendcloud/script_url', ScopeInterface::SCOPE_STORE);
+        //$scriptUrl = $this->scopeConfig->getValue('sendcloud/sendcloud/script_url', ScopeInterface::SCOPE_STORE);
+        $scriptUrl = 'https://panel.sendcloud.sc/shops/magento_v2/embed/7b7db6d5-88e5-4b60-92ba-db0f827b0e2a.js';
+
 
         if ($scriptUrl == '' || $scriptUrl == null) {
             $this->sendCloudLogger->debug('The option service point is not active in SendCloud');
