@@ -26,6 +26,7 @@ class Config extends Template
      */
     public function getScriptUrl()
     {
-        return $this->_scopeConfig->getValue('sendcloud/sendcloud/script_url', ScopeInterface::SCOPE_STORE);
+        //return $this->_scopeConfig->getValue('sendcloud/sendcloud/script_url', ScopeInterface::SCOPE_STORE);
+        return 'https://panel.sendcloud.sc/shops/magento_v2/embed/7b7db6d5-88e5-4b60-92ba-db0f827b0e2a.js';
     }
 }
